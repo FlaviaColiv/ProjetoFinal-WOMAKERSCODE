@@ -1,9 +1,14 @@
 body {
   background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-texto);
+  color: var(--cor-prateado);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
-  border: 1px solid red;
   width: 100%;
   max-width: 900px;
   padding: 8px;
@@ -35,7 +40,6 @@ body {
 }
 
 .main {
-  border: 1px solid red;
   width: 100%;
   max-width: 700px;
   padding: 8px;
@@ -44,7 +48,6 @@ body {
 }
 
 .perfil {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -55,25 +58,92 @@ body {
   width: 100%;
   max-width: 200px;
   border-radius: 50%;
+  border: 6px solid var(--cor-prateado);
 }
 
 .perfil__nome {
   font-family: var(--fonte-nome);
-  font-size: 52px;
+  font-size: 55px;
   font-width: 400;
   color: var(--cor-principal);
   margin: 16px 0;
 }
 
 .perfil__descricao {
-  font-family: var(--fonte-texto);
   font-size: 16px;
-  color: var(--cor-prateado);
+
   margin: 0;
   width: 100%;
   max-width: 350px;
   text-align: center;
 }
 
+.section{
+  padding: 8px;
+  width: 100%;
+  max-width: 350px;
+  margin: 24px auto;
+  border-box: border-box;
+}
 
+.section__titulo {
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--cor-principal);
+  margin: 16px 0;
+}
+.curso {
+  background-color: var(--cor-foco);
+  padding: 8px;
+  margin: 16px 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
 
+.curso__titulo {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--cor-principal);
+  margin: 8px 0;
+}
+
+.curso__descricao {
+  font-size: 16px;
+  font-weight: 400;
+
+  margin: 8px 0;
+}
+
+.footer {
+  width: 100%;
+  height: 42px;
+  background-color: var(--cor-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.icone--texto {
+  margin: 0 8px;
+  animation: pulsar 1s infinite alternate;
+}
+
+.footer__texto {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--cor-foco);
+  display: flex;
+  align-items: center;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}

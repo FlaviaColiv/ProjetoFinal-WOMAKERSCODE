@@ -1,0 +1,12 @@
+:root {
+  --cor-principal: #6795c7;
+  --cor-prateado: #E6E6FA;
+  --cor-de-fundo: #D8BFD8;
+  --cor-foco: #CEB4CF;
+  --cor-detalhes: #FFE4B5;
+
+  --fonte-nome: 'Great Vibes', cursive;
+  --fonte-texto: 'Crimson Pro', serif;
+  --fonte-mensagem: 'Ephesis', cursive; /* mensagem especial */
+
+}
